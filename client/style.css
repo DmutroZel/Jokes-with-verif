@@ -15,6 +15,10 @@
     font-family: 'Montserrat';
     gap: 100px;
 }
+.bw-theme .wrap{
+    background-color: #fff;
+    color: #000;
+}
 .JokesList{
     width: 500px;
     height: 200px;
@@ -24,6 +28,9 @@
     align-items: center;
     justify-content: center;
     font-size: 30px;
+}
+.bw-theme .JokesList{
+    background-color: #fff;
 }
 .generateJoke{
     width: 200px;
@@ -36,12 +43,21 @@
     cursor: pointer;
     transition: 0.5s;
 }
+.bw-theme .generateJoke{
+    background-color: #000;
+    color: #fff;
+}
 .generateJoke:hover{
     background-color: #1d1d1d;
     color: #fff;
     border: 1px solid #fff;
     scale: 1.1;
     transition: 0.5s;
+}
+.bw-theme .generateJoke:hover{
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #000;
 }
 .addJokeBtn{
     width: 50px;
@@ -54,6 +70,10 @@
     cursor: pointer;
     transition: 0.5s;
 }
+.bw-theme .addJokeBtn{
+    background-color: #000;
+    color: #fff;
+}
 .addJokeBtn:hover{
     background-color: #1d1d1d;
     color: #fff;
@@ -62,6 +82,11 @@
     transition: 0.5s;
     color: rgb(175, 56, 56);
     border: 1px solid rgb(175, 56, 56);
+}
+.bw-theme .addJokeBtn:hover{
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #000;
 }
 .popup{
     width: 350px;
@@ -80,8 +105,15 @@
     transform: translate(-50%, -50%);
     transition: 0.5s;
     box-shadow: 9px 21px 208px 80px rgba(48,45,45,1);
--webkit-box-shadow: 9px 21px 208px 80px rgba(48,45,45,1);
--moz-box-shadow: 9px 21px 208px 80px rgba(48,45,45,1);
+    -webkit-box-shadow: 9px 21px 208px 80px rgba(48,45,45,1);
+    -moz-box-shadow: 9px 21px 208px 80px rgba(48,45,45,1);
+}
+.bw-theme .popup{
+    background-color: #fff;
+    border: 1px solid #000;
+    box-shadow: 9px 21px 208px 80px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 9px 21px 208px 80px rgba(0,0,0,0.5);
+    -moz-box-shadow: 9px 21px 208px 80px rgba(0,0,0,0.5);
 }
 .jokeInput{
     width: 200px;
@@ -90,6 +122,9 @@
     border: 5px solid #333;
     padding: 10px;
     font-weight: 12px;
+}
+.bw-theme .jokeInput{
+    border: 5px solid #000;
 }
 .addJoke{
     width: 100px;
@@ -101,10 +136,79 @@
     cursor: pointer;
     transition: 0.5s;
 }
+.bw-theme .addJoke{
+    background-color: #000;
+    color: #fff;
+}
 .addJoke:hover{
     background-color: #fff;
     color: #1d1d1d;
     border: 1px solid #1d1d1d;
     scale: 1.1;
     transition: 0.5s;
+}
+.bw-theme .addJoke:hover{
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #000;
+}
+.musicBtn{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.5s;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+.bw-theme .musicBtn{
+    border: 1px solid #000;
+    color: #000;
+}
+.musicBtn:hover{
+    background-color: #1d1d1d;
+    color: #fff;
+    scale: 1.1;
+    transition: 0.5s;
+}
+.bw-theme .musicBtn:hover{
+    background-color: #000;
+    color: #fff;
+}
+.theme{
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+}
+.themeToggle{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    background-color: #1d1d1d;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.bw-theme .themeToggle{
+    border: 1px solid #000;
+    background-color: #fff;
+    color: #000;
+}
+.themeToggle:hover{
+    background-color: #fff;
+    color: #1d1d1d;
+    scale: 1.1;
+}
+.bw-theme .themeToggle:hover{
+    background-color: #000;
+    color: #fff;
 }
