@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Joke-With-Verif</title>
     <link rel="stylesheet" href="./style.css">
-    <link rel="icon" href="">
+    <link rel="icon" href="./image/joken.png">
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.css' integrity='sha512-GmZYQ9SKTnOea030Tbiat0Y+jhnYLIpsGAe6QTnToi8hI2nNbVMETHeK4wm4MuYMQdrc38x+sX77+kVD01eNsQ==' crossorigin='anonymous'/>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js' integrity='sha512-+k1pnlgt4F1H8L7t3z95o3/KO+o78INEcXTbnoJQ/F2VqDVhWoaiVml/OEHv9HsVgxUaVW+IbiZPUJQfF/YxZw==' crossorigin='anonymous'></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
@@ -14,9 +14,18 @@
 </head>
 <body>
     <div class="wrap">
-        <button id="addJokeBtn">+</button>
+        <div class="popup">
+            <input type="text" class="jokeInput" id="jokeName" placeholder="Введіть ваше ім'я">
+            <input type="text" class="jokeInput" id="jokeText" placeholder="Введіть ваш жарт">
+            <button class="addJoke" id="addJoke">Додати жарт</button>
+        </div>
+        <button class="addJokeBtn" id="addJokeBtn">+</button>
+
         <div class="JokesList">чому народився олег</div>
-        <button id="generateJoke">Згенерувати жарт</button>     
+
+        <button class="generateJoke" id="generateJoke">Згенерувати жарт</button>     
+    
     </div>
+    <script src="./main.js"></script>
 </body>
 </html>
