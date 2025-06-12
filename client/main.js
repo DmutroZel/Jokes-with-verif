@@ -27,10 +27,13 @@ $('#musicBtn').on('click', () => {
     }
 })
 
-document.addEventListener('DOMContentLoaded', () => {
-    const themeToggle = document.getElementById('themeToggle');
-    
-    themeToggle.addEventListener('click', () => {
-        document.body.classList.toggle('bw-theme');
+
+$(document).ready(() => {
+    if(localStorage.getItem('theme') === 'bw-theme'){
+        $('body').addClass('bw-theme')
+    }
+    $('#themeToggle').on('click', () => {
+        $('body').toggleClass('bw-theme');
+        localStorage.setItem('theme', $('body').hasClass('bw-theme') ? 'bw-theme' : '')
     });
 });
